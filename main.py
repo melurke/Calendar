@@ -24,13 +24,13 @@ loop = asyncio.get_event_loop()
 
 # ---------Main Code---------
 
-layout = [[sg.Text('Uhrzeit: '), sg.Text('', key='_time_', size=(20, 1))],
-         [sg.Text('Datum: '), sg.Text('', key='_date_', size=(20, 1))],
-         [sg.Text('Temperatur: '), sg.Text('', key='_temperature_', size=(20, 1))],
-         [sg.Text('Wetter: '), sg.Text('', key='_weather_', size=(20, 1))],
+layout = [[sg.Text('Time: '), sg.Text('', key='_time_', size=(20, 1))],
+         [sg.Text('Date: '), sg.Text('', key='_date_', size=(20, 1))],
+         [sg.Text('Temperature: '), sg.Text('', key='_temperature_', size=(20, 1))],
+         [sg.Text('Weather: '), sg.Text('', key='_weather_', size=(20, 1))],
          [sg.Quit()]]
 
-window = sg.Window('Kalender').Layout(layout)
+window = sg.Window('Calendar').Layout(layout)
 
 while True:
     event, values = window.Read(timeout=10)
