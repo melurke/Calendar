@@ -5,7 +5,7 @@ import python_weather
 
 temp = ""
 sky = ""
-city = ""
+city = "" # Type in your city
 
 sg.theme('Black')
 
